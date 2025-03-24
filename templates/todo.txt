@@ -1,6 +1,6 @@
 0. Install necessary libraries to work fully ofline - Get how to use flask programming in the HTML
-1. Fine tune the home page
-2. Fix the login pathways
+XXXXXXXXXX1. Fine tune the home page 
+2. Fix the login pathways - Make the sign_in_page a pop up
 3. Connect the database and secure the flowpaths
 4. Create a means of uploading questions and answers
 5. Push to Github
@@ -10,3 +10,30 @@
 9. Publicize and upgrade as you go.
 10. Get a domain
 11. Add more features
+12. Create an admin page for posting questions, answers, videos and tutorials and blogs
+
+
+ON THE PROFILE
+-Name
+-Email
+-Picture
+-
+
+Self-filled
+-Exams preparing for
+-Courses
+
+Auto-filled
+-Previous scores in tests
+-Standing in percentile (compared to people in the same class or preparing for the same examination)
+
+
+ON THE QUESTIONS
+-Question type: (OBJ, Fill in the gap)
+-Question
+-Option
+-Answer
+-Explanation
+-Video
+-Image/Code/Equation (Optional)
+-Availability tag (Free or requires login)
