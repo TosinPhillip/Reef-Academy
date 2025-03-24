@@ -1,0 +1,12 @@
+0. Install necessary libraries to work fully ofline - Get how to use flask programming in the HTML
+1. Fine tune the home page
+2. Fix the login pathways
+3. Connect the database and secure the flowpaths
+4. Create a means of uploading questions and answers
+5. Push to Github
+6. Connect to render
+7. Work on security and documentation
+8. Get logos and images
+9. Publicize and upgrade as you go.
+10. Get a domain
+11. Add more features
