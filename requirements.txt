@@ -1,0 +1,9 @@
+flask
+flask-cors
+flask-session
+pymongo
+authlib
+flask-dance
+python-dotenv
+gunicorn
+

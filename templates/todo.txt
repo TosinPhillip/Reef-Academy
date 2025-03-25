@@ -1,4 +1,4 @@
-0. Install necessary libraries to work fully ofline - Get how to use flask programming in the HTML
+0. Install necessary libraries to work fully ofline - Get how to use flask programming in the HTML (Flask, PyMongo, OAUTH authenticators)
 XXXXXXXXXX1. Fine tune the home page 
 2. Fix the login pathways - Make the sign_in_page a pop up
 3. Connect the database and secure the flowpaths
