@@ -1,5 +1,5 @@
-0. Install necessary libraries to work fully ofline - Get how to use flask programming in the HTML (Flask, PyMongo, OAUTH authenticators)
-XXXXXXXXXX1. Fine tune the home page 
+0. Get how to use flask programming in the HTML
+1. Fine tune the home page 
 2. Fix the login pathways - Make the sign_in_page a pop up
 3. Connect the database and secure the flowpaths
 4. Create a means of uploading questions and answers
@@ -37,3 +37,5 @@ ON THE QUESTIONS
 -Video
 -Image/Code/Equation (Optional)
 -Availability tag (Free or requires login)
+
+
