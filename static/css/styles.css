@@ -1,13 +1,62 @@
- /* Styling the pop-out button */
-.pop-out-container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 20px;
-    width: 500px;
-    height: 300px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-};
+/* Modal Overlay */
+.modal-overlay {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 1000; /* Sit on top */
+}
+
+/* Modal Dialog Box */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Center the modal */
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Adjust width as needed */
+  max-width: 500px; /* Maximum width */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  z-index: 1001; /* Sit on top of the overlay */
+  border-radius: 8px;
+}
+
+/* Modal Content Area */
+.modal-content {
+  position: relative;
+}
+
+/* Close Button */
+.modal-close-btn {
+  color: #aaa;
+  position: absolute;
+  top: -10px; /* Adjust position as needed */
+  right: 0px; /* Adjust position as needed */
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Class added to body when modal is open for background effect */
+body.modal-open {
+  overflow: hidden; /* Prevent background scrolling */
+}
+
+/* Optional: Add blur effect to the main content */
+/* Make sure the element you apply this to covers the page behind the modal */
+body.modal-open #signInTrigger { /* Adjust '#wrapper' to your main page container ID/class */
+   filter: blur(5px);
+   transition: filter 0.3s ease-in-out;
+}

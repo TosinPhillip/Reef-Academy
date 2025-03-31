@@ -19,14 +19,27 @@
 					</header>
 					<p>Sed lacus nascetur ac ante amet sapien.</p>
 					<ul class="actions special">
-						<li><a href="#" class="button wide primary">Sign Up</a></li>
+						<li><a href="#" class="button wide primary" id="signInTrigger">Sign Up</a></li>
 						<li><a href="#" class="button wide">Learn More</a></li>
 					</ul>
 				</div>
 			</section>
 
         <br>
-
+        <div id="signInOverlay" class="modal-overlay"></div>
+            
+            <div id="signInModal" class="modal">
+              <div class="modal-content">
+                <span class="modal-close-btn" onclick="closeSignInModal()">&times;</span>
+                <h2>Sign In</h2>
+                <form action="/signin" method="post"> <label for="username">Username:</label><br>
+                     <input type="text" id="username" name="username"><br>
+                     <label for="password">Password:</label><br>
+                     <input type="password" id="password" name="password"><br><br>
+                     <input type="submit" value="Submit">
+                </form> 
+                </div>
+            </div>
         <!--Footer-->
             <section id="footer">
 				<ul class="icons">

@@ -1,10 +1,12 @@
 0. Get how to use flask programming in the HTML
 1. Fine tune the home page 
-2. Fix the login pathways - Make the sign_in_page a pop up
-3. Connect the database and secure the flowpaths
+2. Fix the login pathways - Make the sign_in_page a pop up; make the admin page to require login too
+XXXXXXX3. Connect the database and secure the flowpaths
 4. Create a means of uploading questions and answers
-5. Push to Github
-6. Connect to render
+Fix the exam selection page to post to the database
+Work on the randomization of the questions
+XXXXXXX5. Push to Github
+XXXXXXX6. Connect to render
 7. Work on security and documentation
 8. Get logos and images
 9. Publicize and upgrade as you go.

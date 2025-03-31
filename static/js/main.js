@@ -28,6 +28,22 @@
 
 	// Scrolly.
 		$('.scrolly').scrolly();
+    
+
+        function openSignInPopup(url) {
+      // Define popup window features (width, height, position, etc.)
+      const popupWidth = 500;
+      const popupHeight = 600;
+      const left = (screen.width / 2) - (popupWidth / 2);
+      const top = (screen.height / 2) - (popupHeight / 2);
+    
+      // Open the window
+      window.open(
+        url,
+        'signInPopup',
+        `width=<span class="math-inline">\{popupWidth\},height\=</span>{popupHeight},top=<span class="math-inline">\{top\},left\=</span>{left},resizable=yes,scrollbars=yes`
+      );
+}
 
  
 
