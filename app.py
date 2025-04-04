@@ -1,14 +1,53 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, redirect, url_for, session
+from pymongo.server_api import ServerApi
+from pymongo import MongoClient
+from dotenv import load_dotenv
 import os
-from mongo_db import *
-from login import *
+from authlib.integrations.flask_client import OAuth
+from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
 
 
+
+# Load environment variables
+load_dotenv()
+
+
+#Instantiate the appp
 app = Flask(__name__)
 app.secret_key = os.getenv("SECRET_KEY")
 
+
+#Mongo_DB.py
+# Get the URI from the environment
+MONGO_URI = os.getenv('MONGO_URI')
+
+
+# Create the MongoClient
+client = MongoClient(MONGO_URI)
 db = client["Users"]
 users_collection = db["User_Details"]
+
+
+
+#login.py
+# OAuth Setup
+oauth = OAuth(app)
+google = oauth.register(
+    name="google",
+    client_id=os.getenv("GOOGLE_CLIENT_ID"),
+    client_secret=os.getenv("GOOGLE_CLIENT_SECRET"),
+    authorize_url="https://accounts.google.com/o/oauth2/auth",
+    authorize_params=None,
+    access_token_url="https://oauth2.googleapis.com/token",
+    access_token_params=None,
+    refresh_token_url=None,
+    jwks_uri="https://www.googleapis.com/oauth2/v3/certs",
+    client_kwargs={"scope": "openid email profile"},
+)
+
+
+
+
 
 
 
