@@ -87,6 +87,16 @@ def sign_in_page():
 def layout():
     return render_template('layout.html')
 
+# Profile page
+@app.route("/profile")
+@login_required
+def profile():
+    return render_template('profile.html', user_info={
+        "name": current_user.name,
+        "email": current_user.id,
+        "picture": current_user.picture
+    })
+
 # Option to log in with google account  
 @app.route("/login_with_google")
 def login_with_google():
@@ -119,15 +129,7 @@ def logout():
     
    
 
-# Profile page
-@app.route("/profile")
-@login_required
-def profile():
-    return render_template('profile.html', user_info={
-        "name": current_user.name,
-        "email": current_user.id,
-        "picture": current_user.picture
-    })
+
 
 
 if __name__ == '__main__':
