@@ -1,12 +1,10 @@
-0. Get how to use flask programming in the HTML
+0. Get how to use flask programming in the HTML and how to make importations into the app.py file
 1. Fine tune the home page 
-2. Fix the login pathways - Make the sign_in_page a pop up; make the admin page to require login too
-XXXXXXX3. Connect the database and secure the flowpaths
+2. Fix the login pathways - make the admin page to require login
+3. Secure the database flowpaths
 4. Create a means of uploading questions and answers
-Fix the exam selection page to post to the database
-Work on the randomization of the questions
-XXXXXXX5. Push to Github
-XXXXXXX6. Connect to render
+5. Fix the exam selection page to post to the database and the exam answering page to have a timer.(Students can choose the number of FREE questions they want to answer but cannot select the time for the questions. The time will be calculated based on the standard time per question. For SPECIAL questions, the examiner fixes the time and number of questions)
+6. Work on the randomization of the questions
 7. Work on security and documentation
 8. Get logos and images
 9. Publicize and upgrade as you go.
@@ -38,6 +36,6 @@ ON THE QUESTIONS
 -Explanation
 -Video
 -Image/Code/Equation (Optional)
--Availability tag (Free or requires login)
+-Availability tag (Free or requires login) Free questions can be answered by anybody even without logging in. Questions that require login can only be seen by logged in users that have a specific code that leads to the exam.
 
 

@@ -22,7 +22,18 @@
                 
                 <div class="container">
             					<header class="major">
-            						<h2>Test is the true proof of ability</h2>
+            						<h2>{% with messages = get_flashed_messages() %}
+                                          {% if messages %}
+                                            <ul class="flashes">
+                                            {% for message in messages %}
+                                              <li>{{ message }}</li>
+                                            {% endfor %}
+                                            </ul>
+                                          {% else %}
+                                            {{default_message}}
+                                          {% endif %}
+                                        {% endwith %}
+                                    </h2>
             					</header>
             					<p> Sign in with</p>
             					<ul class="actions special">
